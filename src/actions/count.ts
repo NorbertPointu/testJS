@@ -1,4 +1,4 @@
-import { Countries } from "../types/types";
+import { Countries } from "../types/country-types";
 
 /**
  * Add to the name of each items the number of sub items (people or animals)

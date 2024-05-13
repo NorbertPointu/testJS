@@ -17,3 +17,5 @@ type Animals = Animal[];
 interface Animal {
   name: string;
 }
+
+

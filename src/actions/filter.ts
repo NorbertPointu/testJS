@@ -1,4 +1,4 @@
-import { Countries, People } from "../types/types";
+import { Countries, People } from "../types/country-types";
 
 /**
  * Filter the list of countries with people who has any animal names contains chars passing in param

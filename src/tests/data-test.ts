@@ -1,4 +1,4 @@
-import { Countries } from "../types/types";
+import { Countries } from "../types/country-types";
 
 export const countriesLong: Countries = [
   {

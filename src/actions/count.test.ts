@@ -1,5 +1,5 @@
-import { count } from "../actions/count";
-import { countriesShort } from "./data-test";
+import { count } from "./count";
+import { countriesShort } from "../tests/data-test";
 
 describe("Count items", () => {
   test("should return correct counters when no filter on animals", () => {
