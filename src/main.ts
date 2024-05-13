@@ -3,7 +3,6 @@ import { filter } from "./actions/filter";
 import { Countries } from "./types/country-types";
 import { displayRed, displayBold } from "./utils/display";
 import { getActions } from "./utils/getActions";
-import { inspect } from "node:util";
 
 export const main = (givenCoutries: Countries, actionsInArgs: string[]) => {
   const actions = getActions(actionsInArgs);
