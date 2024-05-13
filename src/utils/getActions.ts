@@ -1,7 +1,7 @@
 const PREFIX_ACTION = "--";
 
 /**
- * Convert a list of actions "action=value" to an object with action as key and p
+ * Convert a list of actions "action=value" to an object with action as key and value
  * @returns object of actions
  */
 export const getActions = (actions: string[]) =>

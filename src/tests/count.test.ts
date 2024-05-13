@@ -1,4 +1,4 @@
-import { count } from "./count";
+import { count } from "../actions/count";
 import { countriesShort } from "../tests/data-test";
 
 describe("Count items", () => {

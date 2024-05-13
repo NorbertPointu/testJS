@@ -1,5 +1,5 @@
-import { filter } from "./filter";
-import { countriesLong } from "../tests/data-test";
+import { filter } from "../actions/filter";
+import { countriesLong } from "./data-test";
 
 describe("Filter on people with animals", () => {
   test("should return all people if no filter", () => {
