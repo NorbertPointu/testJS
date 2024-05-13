@@ -1,8 +1,8 @@
 # Javascript developer test
 
-## Uodates 
+## Updates 
 
-this application has been made with typescript.
+this application has been made with Typescript.
 It must be execute with comamnd line : 
 
 ```shell js
