@@ -1,11 +1,12 @@
 import { main } from "../main";
 import { Countries } from "../types/country-types";
+import { ERROR_NO_ARGS } from "../utils/global";
 import { countriesLong } from "./data-test";
 
 describe("main", () => {
-  test("should return -1 if no action", () => {
+  test("should return ERROR_NO_ARGS if no action", () => {
     const result = main(countriesLong, []);
-    expect(result).toEqual(-1);
+    expect(result).toEqual(ERROR_NO_ARGS);
   });
 
   test("should return 2 people when filtered on Lucy", () => {

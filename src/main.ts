@@ -3,13 +3,14 @@ import { filter } from "./actions/filter";
 import { Countries } from "./types/country-types";
 import { displayRed, displayBold } from "./utils/display";
 import { getActions } from "./utils/getActions";
+import { ERROR_NO_ARGS } from "./utils/global";
 
 export const main = (givenCoutries: Countries, actionsInArgs: string[]) => {
   const actions = getActions(actionsInArgs);
 
   //Check passing actions
   if (!checkPassingActions(actions)) {
-    return -1;
+    return ERROR_NO_ARGS;
   }
 
   let result: Countries = [];
@@ -30,6 +31,7 @@ const checkPassingActions = (actions: object) => {
   const hasActions = Object.keys(actions).some((action) =>
     ["filter", "count"].includes(action)
   );
+  
   if (!hasActions) {
     console.log(displayRed("Missing arguments!"));
     console.log(
@@ -47,7 +49,6 @@ const checkPassingActions = (actions: object) => {
         "--count"
       )} will display the number of items at the end of the name`
     );
-    return false;
   }
-  return true;
+  return hasActions;
 };

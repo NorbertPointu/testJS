@@ -1,4 +1,4 @@
-const PREFIX_ACTION = "--";
+import { PREFIX_ACTION } from "./global";
 
 /**
  * Convert a list of actions "action=value" to an object with action as key and value
