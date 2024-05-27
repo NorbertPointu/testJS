@@ -6,7 +6,7 @@ this application has been made with Typescript.
 It must be execute with comamnd line : 
 
 ```shell js
-npx ts-node ./src/app.ts --filter=an --count 
+npx ts-node ./src/app.ts --filter=ry --count 
 ```
 
 
