@@ -5,7 +5,7 @@ import { displayRed, displayBold } from "./utils/display";
 import { getActions } from "./utils/getActions";
 import { ERROR_NO_ARGS } from "./utils/global";
 
-export const main = (givenCoutries: Countries, actionsInArgs: string[]) => {
+export const main = (givenCountries: Countries, actionsInArgs: string[]) => {
   const actions = getActions(actionsInArgs);
 
   //Check passing actions
@@ -15,9 +15,9 @@ export const main = (givenCoutries: Countries, actionsInArgs: string[]) => {
 
   let result: Countries = [];
   if (actions.hasOwnProperty("filter")) {
-    result = filter(givenCoutries, actions["filter"]);
+    result = filter(givenCountries, actions["filter"]);
   } else {
-    result = givenCoutries;
+    result = givenCountries;
   }
 
   if (actions.hasOwnProperty("count")) {
